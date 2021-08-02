@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".Activity.PaymentActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/paymentback"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/paymentprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/ic_dehaze_black_24dp"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text=" Payment"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="40dp" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/card"></ImageView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:layout_weight="2.8"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="textEnd"
+            android:gravity="center"
+            android:text="Add new Card"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_gravity="end"
+            android:layout_marginBottom="15dp"
+            android:layout_weight=".2"
+            android:drawableRight="@drawable/ic_add_black_24dp"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginBottom="30dp"
+        >
+        <TextView
+            android:id="@+id/usercity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total Amount"
+            android:paddingBottom="20dp" />
+        <TextView
+            android:id="@+id/userzipcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="$5000"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="textEnd"
+            android:paddingBottom="20dp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/conformpayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Confirm"
+        android:textColor="@color/black"
+        style="@style/ButtonStyle"
+        android:textSize="15dp" />
+
+
+</LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

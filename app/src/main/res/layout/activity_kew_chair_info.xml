@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eee"
+    tools:context=".Activity.KewChairInfo">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="?actionBarSize">
+        <ImageView
+            android:id="@+id/kewchairinfoback"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:background="@drawable/ic_arrow_back_black_24dp"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_gravity="center|end">
+
+            <ImageView
+                android:id="@+id/kewchairinfobag"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center|end"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/cart" />
+
+            <ImageView
+                android:id="@+id/kewchairinfoprofile"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_dehaze_black_24dp" />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kew Chairs"
+        android:textStyle="bold"
+        android:paddingLeft="23dp"
+        android:paddingRight="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="23dp"
+        android:layout_marginBottom="15dp"
+        android:paddingRight="10dp"
+        android:weightSum="2"
+        >
+        <TextView
+            android:id="@+id/usercity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="A Modern Tradition"
+            android:textColor="@color/black"
+            android:paddingBottom="10dp" />
+        <TextView
+            android:id="@+id/userzipcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="More info"
+            android:textAlignment="textEnd"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:drawableRight="@drawable/ic_keyboard_arrow_dup_black_24dp"
+            android:paddingBottom="10dp" />
+    </LinearLayout>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="23dp"
+    android:paddingRight="10dp"
+    android:layout_marginBottom="30dp"
+    android:text="The product was good.The product was good.The product was good.The product was good.The product was good.The product was good. "/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:paddingRight="10dp"
+        android:paddingLeft="23dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="0.1"
+            android:text="The Chair"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="15dp"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_weight="2.9"
+            android:text="desk chair"
+            android:textSize="15dp" />
+    </LinearLayout>
+    </LinearLayout>
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    android:src="@drawable/chairinfo"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="Size"
+        android:layout_gravity=""
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:paddingLeft="8dp"
+
+        android:weightSum="2"
+        >
+        <TextView
+            android:id="@+id/itemdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:hint="H 50cm ,w 2kg ,d 40mm"
+            android:textColor="@color/black"
+             />
+
+<!--        <TextView-->
+<!--            android:id="@+id/count"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:drawableLeft="@drawable/ic_remove_black_24dp"-->
+<!--            android:drawableRight="@drawable/ic_add_black_24dp"-->
+<!--            android:text="2"-->
+<!--            android:paddingRight="20dp"-->
+<!--            android:paddingLeft="20dp"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textStyle="bold" />-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/chairinforemove"
+                android:layout_width="24dp"
+                android:layout_height="30dp"
+                android:padding="1dp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/circle_dots_grey"
+                android:src="@drawable/ic_remove_black_24dp" />
+            <TextView
+                android:id="@+id/chairinfocounts"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:text="0"
+                android:padding="1dp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:textAlignment="center"
+                android:textSize="20dp"/>
+<!--            <ImageView-->
+<!--                android:layout_width="25dp"-->
+<!--                android:layout_height="25dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:src="@drawable/ic_add_black_24dp"-->
+<!--                android:background="@drawable/circle_dots_grey"/>-->
+            <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/chairinfoadd"
+                android:layout_width="24dp"
+                android:layout_height="30dp"
+                android:padding="1dp"
+                android:background="@drawable/circle_dots_grey"
+                android:src="@drawable/ic_add_black_24dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/addtobeg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Add to bag"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        style="@style/ButtonStyle"
+        android:textSize="15dp" />
+
+    </LinearLayout>
+</LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

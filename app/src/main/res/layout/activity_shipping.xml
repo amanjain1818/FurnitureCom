@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".Activity.ShippingActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/shippingback"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:layout_weight="1"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+             />
+        <TextView
+            android:id="@+id/profileshpping"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/ic_dehaze_black_24dp"
+             />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text=" Shipping"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="40dp" />
+
+<!--    <EditText-->
+<!--        android:id="@+id/userfullname"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:paddingBottom="20dp"-->
+<!--        android:hint="Full Name" />-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingBottom="20dp"
+            android:hint="Full Name"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingBottom="20dp"
+            android:hint="Address"/>
+    </com.google.android.material.textfield.TextInputLayout>
+<!--    -->
+<!--    <EditText-->
+<!--        android:id="@+id/useraddress"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:paddingBottom="20dp"-->
+<!--        android:hint="Address" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginBottom="10dp"
+        >
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:paddingBottom="20dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:drawableRight="@drawable/ic_expand_more_black_24dp"-->
+<!--                android:inputType="textWebPassword"-->
+<!--                android:hint="Country"/>-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:paddingBottom="20dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:drawableRight="@drawable/ic_expand_more_black_24dp"-->
+<!--                android:inputType="textWebPassword"-->
+<!--                android:hint="zip code"/>-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+        <EditText
+            android:id="@+id/usercity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="City"
+            android:drawableRight="@drawable/ic_expand_more_black_24dp"
+            android:paddingBottom="20dp" />
+
+
+        <EditText
+            android:id="@+id/userzipcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Zip Code"
+            android:paddingBottom="20dp" />
+
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingBottom="20dp"
+            android:drawableRight="@drawable/ic_expand_more_black_24dp"
+            android:hint="Country"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:paddingBottom="20dp"
+            android:drawableRight="@drawable/ic_expand_more_black_24dp"
+            android:hint="Shipping Method"/>
+    </com.google.android.material.textfield.TextInputLayout>
+<!--    <EditText-->
+<!--        android:id="@+id/usercountry"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        android:paddingBottom="20dp"-->
+<!--        android:drawableRight="@drawable/ic_expand_more_black_24dp"-->
+<!--        android:hint="Country" />-->
+<!--    <EditText-->
+<!--        android:id="@+id/usershipingmtd"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="80dp"-->
+<!--        android:paddingBottom="20dp"-->
+<!--        android:drawableRight="@drawable/ic_expand_more_black_24dp"-->
+<!--        android:hint="Shipping Method" />-->
+
+
+    <Button
+        android:id="@+id/continuepayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Continue To Payment"
+        android:textColor="@color/black"
+        style="@style/ButtonStyle"
+        android:textSize="15dp" />
+
+
+</LinearLayout>

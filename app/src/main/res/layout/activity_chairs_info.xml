@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.ChairsInfo">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#eee"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="?actionBarSize">
+            <ImageView
+
+                android:id="@+id/kewback"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_arrow_back_black_24dp"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_gravity="center|end">
+
+                <ImageView
+                    android:id="@+id/kewbeg"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center|end"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/cart" />
+
+                <ImageView
+                    android:id="@+id/kewprofile"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="end"
+                    android:src="@drawable/ic_dehaze_black_24dp" />
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/kew"
+        android:layout_width="420dp"
+        android:layout_height="380dp"
+        android:src="@drawable/chairinfo"
+        android:background="#eee"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="20dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kew Chairs"
+        android:textStyle="bold"
+        android:paddingLeft="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="30dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A modern tradition"
+        android:paddingLeft="8dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@android:color/black"
+        android:textSize="15dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:padding="8dp"
+        android:text="A Modern Tradition is a good.A Modern Tradition is a good.A Modern Tradition is a good.A Modern Tradition is a good.A Modern Tradition is a good. "
+        android:textColor="@color/black"
+        android:textSize="12dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="8dp"
+        android:weightSum="2"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:text="Size"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Inchange"
+            android:paddingRight="5dp"
+            android:paddingLeft="15dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="8dp"
+        android:weightSum="2"
+        >
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.94"
+            android:hint="H 50cm ,w 2kg ,d 40mm"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="One week"
+            android:paddingLeft="35dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="2dp"
+        android:paddingLeft="8dp"
+        android:weightSum="2"
+        >
+
+
+        <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/colordotss"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_weight="1.7"
+
+        />
+
+<!--        <ImageView-->
+<!--            android:layout_width="15dp"-->
+<!--            android:layout_height="15dp"-->
+<!--            android:layout_weight=""-->
+<!--            android:src="@drawable/ic_remove_black_24dp"-->
+<!--&lt;!&ndash;            android:background="@drawable/circle_dots"/>&ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/countchairs"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="0.3"-->
+<!--            android:drawableLeft="@drawable/ic_remove_black_24dp"-->
+<!--            android:drawableRight="@drawable/ic_add_black_24dp"-->
+<!--            android:text="2"-->
+<!--            android:paddingRight="25dp"-->
+<!--            android:paddingLeft="25dp"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textStyle="bold" />-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.4"
+            >
+            <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/chairsromove"
+                android:layout_width="24dp"
+                android:layout_height="30dp"
+                android:padding="1dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/circle_dots"
+                android:src="@drawable/ic_remove_black_24dp" />
+            <TextView
+                android:id="@+id/chairscount"
+                android:layout_width="2dp"
+                android:layout_height="30dp"
+                android:text="0"
+                android:padding="1dp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:textAlignment="center"
+                android:textSize="20dp"/>
+
+
+
+
+<!--            <ImageView-->
+<!--                android:layout_width="25dp"-->
+<!--                android:layout_height="25dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:src="@drawable/ic_add_black_24dp"-->
+<!--                android:background="@drawable/circle_dots"/>-->
+
+            <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/chairsadd"
+                android:layout_width="24dp"
+                android:layout_height="30dp"
+                android:padding="1dp"
+                android:layout_marginRight="19dp"
+                android:background="@drawable/circle_dots"
+                android:src="@drawable/ic_add_black_24dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/chairinfobag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Add to bag"
+        android:layout_margin="20dp"
+        android:textColor="@color/black"
+        style="@style/ButtonStyle"
+        android:textSize="15dp" />
+
+</LinearLayout>
+</LinearLayout>
+       </androidx.core.widget.NestedScrollView>
+</LinearLayout>

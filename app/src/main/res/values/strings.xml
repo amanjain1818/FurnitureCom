@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FurnitureCom</string>
+
+        <string name="dialog_message">Welcome to Furniture Shop</string>
+        <string name="dialog_title">Choose</string>
+
+
+
+</resources>

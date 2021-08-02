@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.furniturecom">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/n"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.ChairsInfo"></activity>
+        <activity android:name=".Activity.ChairsActivity">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity android:name=".Activity.CongrtsActivity" />
+        <activity android:name=".Activity.MyBegActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".Activity.KewChairInfo" />
+        <activity android:name=".Activity.KewChairsModern" />
+        <activity android:name=".Activity.ZenLiving" />
+        <activity android:name=".Activity.FurnitureItemsActivity" />
+        <activity android:name=".Activity.CollectionActivity">
+
+<!--             <intent-filter>-->
+<!--             <action android:name="android.intent.action.MAIN" />-->
+
+
+<!--             <category android:name="android.intent.category.LAUNCHER" />-->
+<!--             </intent-filter>-->
+        </activity>
+        <activity android:name=".Activity.PaymentActivity" />
+        <activity android:name=".Activity.ShippingActivity" />
+        <activity android:name=".Activity.ProfileActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".Activity.ChangePassword" />
+        <activity android:name=".Activity.AddCardActivity" />
+        <activity android:name=".Activity.ExploreCategoryActivtiy" />
+        <activity android:name=".Activity.SignUpActivity" />
+        <activity android:name=".Activity.LoginActivity">
+
+             <intent-filter>
+             <action android:name="android.intent.action.MAIN" />
+
+
+             <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+        </activity>
+        <activity android:name=".Activity.MainActivity" />
+    </application>
+
+</manifest>

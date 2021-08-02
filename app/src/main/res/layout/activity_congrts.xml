@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".Activity.CongrtsActivity">
+
+    <TextView
+        android:id="@+id/profilecongrts"
+        android:layout_width="wrap_content"
+        android:layout_height="?actionBarSize"
+        android:layout_gravity="end"
+        android:layout_marginBottom="200dp"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_dehaze_black_24dp"
+        android:textColor="@android:color/black"
+        android:textSize="15dp" />
+
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:background="@drawable/tree"
+        android:layout_gravity="center"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Congrat!"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="15dp"
+        android:layout_marginBottom="150dp"
+        android:text="Thanks you for purchasing your order will be shipped in 2-4 working days"/>
+
+
+    <Button
+        android:id="@+id/continueshopping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Continue Shopping"
+        android:textColor="@color/black"
+        style="@style/ButtonStyle"
+        android:textSize="15dp" />
+</LinearLayout>

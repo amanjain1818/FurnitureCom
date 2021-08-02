@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="@color/white"
+    tools:context=".Activity.ProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end">
+
+            <ImageView
+                android:id="@+id/profilebag"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center|end"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/cart" />
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_dehaze_black_24dp" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Profile"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="40dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userinformation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Account"
+        android:padding="5dp"
+    android:layout_marginBottom="20dp"
+    android:textSize="10dp"/>
+    <TextView
+        android:id="@+id/userlocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+        android:text="Location" />
+
+    <TextView
+        android:id="@+id/userchangepass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+        android:text="Change Password" />
+
+    <TextView
+        android:id="@+id/usershiping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+        android:text="Shipping" />
+    <TextView
+        android:id="@+id/userpayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+        android:text="Payment" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notificatios"
+        android:padding="5dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="10dp"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:text="App Notifications"/>
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:textStyle="bold"
+        android:text="Change Password"/>
+</LinearLayout>

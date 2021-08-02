@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/begitems"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="#eee"
+    android:layout_margin="10dp"
+    app:cardElevation="1dp">
+
+
+    <com.chauthai.swipereveallayout.SwipeRevealLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:dragEdge="right"
+        app:mode="same_level">
+
+        <!-- Your secondary layout here -->
+        <FrameLayout
+            android:id="@+id/delte"
+            android:layout_width="100dp"
+            android:background="@color/viewcolor"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_delete_black_24dp"/>
+        </FrameLayout>
+
+        <!-- Your main layout here -->
+        <FrameLayout
+            android:id="@+id/swipee"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="30dp"
+                android:background="#eee"
+                android:orientation="horizontal"
+                android:paddingHorizontal="20dp"
+
+                >
+
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+                    android:padding="6dp"
+                    android:src="@drawable/cha" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="#eee"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/begname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="5dp"
+                        android:text="Coffe table"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/begprice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:paddingHorizontal="5dp"
+                        android:paddingLeft="8dp"
+                        android:text="$680"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="8dp"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/itemdetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.98"
+                            android:hint="order check"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black" />
+
+                        <!--                <TextView-->
+                        <!--                    android:id="@+id/count"-->
+                        <!--                    android:layout_width="wrap_content"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:layout_weight="1"-->
+                        <!--                    android:drawableLeft="@drawable/ic_remove_black_24dp"-->
+                        <!--                    android:drawableRight="@drawable/ic_add_black_24dp"-->
+                        <!--                    android:paddingBottom="10dp"-->
+                        <!--                    android:text="2"-->
+                        <!--                    android:textAlignment="center"-->
+                        <!--                    android:textColor="@color/black"-->
+                        <!--                    android:textStyle="bold" />-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <!--                    <ImageView-->
+                            <!--                        android:layout_width="25dp"-->
+                            <!--                        android:layout_height="25dp"-->
+                            <!--                        android:src="@drawable/ic_remove_black_24dp"-->
+                            <!--                        android:layout_marginLeft="15dp"-->
+                            <!--                        android:layout_weight="1"-->
+                            <!--                        android:padding="2dp"-->
+                            <!--                        android:layout_gravity="center"-->
+                            <!--                        android:layout_marginRight="15dp"-->
+                            <!--                        android:background="@drawable/circle_dots_grey"/>-->
+                            <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/remove"
+                                android:layout_width="24dp"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/circle_dots_grey"
+                                android:padding="1dp"
+                                android:src="@drawable/ic_remove_black_24dp" />
+
+                            <TextView
+                                android:id="@+id/itemcount"
+                                android:layout_width="25dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:padding="1dp"
+                                android:text="2"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+                            <!--                    <ImageView-->
+                            <!--                        android:layout_width="25dp"-->
+                            <!--                        android:layout_height="25dp"-->
+                            <!--                        android:layout_weight="1"-->
+                            <!--                        android:layout_gravity="center"-->
+                            <!--                        android:src="@drawable/ic_add_black_24dp"-->
+                            <!--                        android:background="@drawable/circle_dots_grey"/>-->
+
+                            <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/add"
+                                android:layout_width="24dp"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="1dp"
+                                android:background="@drawable/circle_dots_grey"
+                                android:padding="1dp"
+                                android:src="@drawable/ic_add_black_24dp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </com.chauthai.swipereveallayout.SwipeRevealLayout>
+
+
+</androidx.cardview.widget.CardView>

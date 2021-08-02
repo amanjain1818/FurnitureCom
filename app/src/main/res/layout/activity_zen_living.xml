@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_height="wrap_content"
+    tools:context=".Activity.ZenLiving">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:background="#eee"
+        android:layout_height="?actionBarSize">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center|end"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/bag" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_dehaze_black_24dp" />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:src="@drawable/chair"
+        android:layout_marginBottom="10dp"
+        android:background="#eee"></ImageView>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Zen Living"
+    android:textSize="30dp"
+    android:background="@color/white"
+    android:layout_margin="10dp"
+    android:textColor="@color/black"
+    android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" the product was good .  the product was good .  the product was good .  the product was good .  "
+        android:textSize="18dp"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="5dp"
+        >
+        <TextView
+            android:id="@+id/bestseller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Most Popular"
+            android:textStyle="bold"
+
+            android:textColor="@color/black"
+            android:paddingBottom="20dp" />
+        <TextView
+            android:id="@+id/bestall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="View All"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="textEnd"
+            android:paddingBottom="20dp" />
+    </LinearLayout>
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/zenlivingrecycler"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content"
+    ></androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

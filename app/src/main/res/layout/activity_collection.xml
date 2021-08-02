@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="#eee"
+    tools:context=".Activity.CollectionActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginBottom="5dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end">
+
+            <ImageView
+                android:id="@+id/collectionbag"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center|end"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/cart" />
+
+            <ImageView
+                android:id="@+id/collectionprofile"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="end"
+                android:src="@drawable/ic_dehaze_black_24dp" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/collectiontab"
+        android:paddingRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"/>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:weightSum="3"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        >-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/featured"-->
+<!--            android:layout_width="155dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="Featured"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="30dp"-->
+<!--            android:textStyle="bold" />-->
+<!--        <TextView-->
+<!--            android:id="@+id/newcolloection"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="New"-->
+<!--            android:textSize="30dp"-->
+<!--             />-->
+<!--        <TextView-->
+<!--            android:id="@+id/collection"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="Collection"-->
+<!--            android:textSize="30dp"/>-->
+
+<!--    </LinearLayout>-->
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/featuredrecycler"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:paddingLeft="10dp"
+    android:layout_marginBottom="20dp"
+    ></androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+            android:id="@+id/bestseller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Best sellers"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:paddingLeft="8dp"
+            android:textColor="@color/black"
+             />
+        <TextView
+            android:id="@+id/bestall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15dp"
+            android:hint="View All"
+            android:textColorHint="@color/colorAccent"
+            android:paddingRight="5dp"
+            android:textAlignment="textEnd"
+            />
+    </LinearLayout>
+
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="3dp"
+    android:layout_marginBottom="20dp"
+    android:id="@+id/featuedbestrecycler">
+
+</androidx.recyclerview.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginBottom="15dp"
+        >
+        <TextView
+            android:id="@+id/handpicks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hand-picks"
+            android:paddingLeft="8dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/usercode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="View All"
+            android:textColorHint="@color/colorAccent"
+            android:paddingRight="5dp"
+            android:textSize="15dp"
+            android:textAlignment="textEnd"
+            />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/handpick"
+        android:paddingLeft="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

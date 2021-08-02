@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="#eee"
+    tools:context=".Activity.MyBegActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <TextView
+        android:id="@+id/removefur"
+        android:layout_width="wrap_content"
+        android:layout_height="?actionBarSize"
+        android:layout_gravity="end"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_close_black_24dp"
+        android:textColor="@android:color/black"
+        android:textSize="15dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text=" My Bag"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="40dp" />
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/begitemsrecycler"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="100dp"
+    android:layout_height="400dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginBottom="30dp"
+        >
+        <TextView
+            android:id="@+id/usercity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="Total Amount"
+            android:paddingBottom="20dp" />
+        <TextView
+            android:id="@+id/userzipcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="$5000"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textAlignment="textEnd"
+            android:paddingBottom="20dp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/thanku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Confirm"
+        android:textColor="@color/black"
+        style="@style/ButtonStyle"
+        android:textSize="15dp" />
+
+<TextView
+    android:id="@+id/contine"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Continue Shopping"
+    android:textAlignment="center"
+    android:textColor="@color/black"/>
+</LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
